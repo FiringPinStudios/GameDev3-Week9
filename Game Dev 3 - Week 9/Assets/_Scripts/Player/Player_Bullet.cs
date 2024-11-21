@@ -5,7 +5,6 @@ namespace GameDevWithMarco.Player
 {
     public class Player_Bullet : MonoBehaviour
     {
-        [SerializeField] GameObject flash;
         private void OnCollisionEnter2D(Collision2D collision)
         {
             //To get where specifically I have collided 

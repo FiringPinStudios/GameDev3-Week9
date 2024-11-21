@@ -37,16 +37,15 @@ namespace GameDevWithMarco.Player
             GameObject spawnedBullet = ObjectPoolingPattern.Instance.GetPoolItem(ObjectPoolingPattern.TypeOfPool.BulletPool);
 
             //Make the bullet be in the right position
-            if (spawnedBullet != null)
-            {
-                spawnedBullet.transform.position = tipOfTheBarrel.transform.position;
-            }
+            if (spawnedBullet != null) spawnedBullet.transform.position = tipOfTheBarrel.transform.position;
+
 
             //Random bullet scale
             RandomiseBulletSize(spawnedBullet);
 
             //Fires the bullet
             Rigidbody2D bulletsRb = spawnedBullet.GetComponent<Rigidbody2D>();
+
             FireBulletInRightDirection(bulletsRb);
 
             //Does a pushback
