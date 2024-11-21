@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3596777484592746584}
   - component: {fileID: 5253057022402804986}
   - component: {fileID: 6804974274954986808}
+  - component: {fileID: -1854117225089125900}
   m_Layer: 0
   m_Name: MuzzleFlash
   m_TagString: Untagged
@@ -106,3 +107,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-1854117225089125900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667825704754077554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2212baca9c9d747ba62c24c13a98ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

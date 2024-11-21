@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using GameDevWithMarco.DesignPattern;
 using UnityEngine;
 
 namespace GameDevWithMarco.Player
@@ -14,9 +13,9 @@ namespace GameDevWithMarco.Player
             {
                 Vector2 collisionPoint = contact.point;//Add a cool muzzleflash in collision
                 float randomRange = Random.Range(05f, 1.5f);
-                var flashObj = Instantiate(flash, collisionPoint, Quaternion.identity);
+                var flashObj = ObjectPoolingPattern.Instance.GetPoolItem(ObjectPoolingPattern.TypeOfPool.MuzzleFlash);
                 flashObj.transform.localScale = new Vector3(randomRange, randomRange, randomRange);
-                Destroy(flashObj, 0.5f);
+                flashObj.transform.position = collisionPoint;
             }
             //Returns the game object to the available pool
             gameObject.SetActive(false);
