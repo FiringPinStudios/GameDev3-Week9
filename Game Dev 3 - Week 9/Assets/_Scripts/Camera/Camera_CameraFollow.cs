@@ -1,7 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+namespace GameDevWithMarco.CameraStuff
+{
 public class Camera_CameraFollow : MonoBehaviour
 {
     /// <summary>
@@ -41,4 +41,5 @@ public class Camera_CameraFollow : MonoBehaviour
         //Actually moves the camera to the smoothedPosition Vector3 location
         transform.position = smoothedPosition;
     }
+}
 }
